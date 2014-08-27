@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "app/controllers/kadmin/dashboard_controller.rb",
+    "app/views/kadmin/dashboard/index.html.erb",
     "config/routes.rb",
     "kadmin.gemspec",
     "lib/kadmin.rb",
