@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ThanhKhoaIT"]
-  s.date = "2014-08-27"
+  s.date = "2014-08-30"
   s.description = "Copyright: ThanhKhoaIT"
   s.email = "thanhkhoait@gmail.com"
   s.extra_rdoc_files = [
@@ -25,8 +25,18 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "app/assets/images/kadmin/favicon.png",
+    "app/assets/images/kadmin/glyphicons-halflings-white.png",
+    "app/assets/images/kadmin/glyphicons-halflings.png",
+    "app/assets/javascripts/kadmin/admin.js",
+    "app/assets/javascripts/kadmin/bootstrap.js",
+    "app/assets/stylesheets/kadmin/admin.css",
+    "app/assets/stylesheets/kadmin/bootstrap-responsive.css",
+    "app/assets/stylesheets/kadmin/bootstrap.css",
     "app/controllers/kadmin/dashboard_controller.rb",
+    "app/controllers/kadmin_controller.rb",
     "app/views/kadmin/dashboard/index.html.erb",
+    "app/views/layouts/kadmin.html.erb",
     "config/routes.rb",
     "kadmin.gemspec",
     "lib/kadmin.rb",
