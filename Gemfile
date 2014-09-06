@@ -11,6 +11,3 @@ group :development do
 end
 
 gem 'devise', '3.0.0.rc'
-
-# Style
-gem 'font-awesome-sass'
