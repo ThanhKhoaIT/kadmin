@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ThanhKhoaIT"]
-  s.date = "2014-08-30"
+  s.date = "2014-09-06"
   s.description = "Copyright: ThanhKhoaIT"
   s.email = "thanhkhoait@gmail.com"
   s.extra_rdoc_files = [
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "app/assets/images/kadmin/favicon.png",
+    "app/assets/images/kadmin/favicon.ico",
     "app/assets/images/kadmin/glyphicons-halflings-white.png",
     "app/assets/images/kadmin/glyphicons-halflings.png",
     "app/assets/javascripts/kadmin/application.js",
@@ -33,12 +33,15 @@ Gem::Specification.new do |s|
     "app/assets/stylesheets/kadmin/application.css",
     "app/assets/stylesheets/kadmin/bootstrap-responsive.css",
     "app/assets/stylesheets/kadmin/bootstrap.css",
+    "app/assets/stylesheets/kadmin/reset.css",
+    "app/assets/stylesheets/kadmin/styles.scss",
     "app/controllers/kadmin/dashboard_controller.rb",
     "app/controllers/kadmin_controller.rb",
     "app/views/kadmin/dashboard/index.html.erb",
     "app/views/layouts/kadmin.html.erb",
     "config/routes.rb",
     "kadmin.gemspec",
+    "lib/generators/kadmin/install_generator.rb",
     "lib/kadmin.rb",
     "lib/kadmin/version.rb"
   ]
@@ -52,12 +55,16 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<devise>, ["= 3.0.0.rc"])
+      s.add_runtime_dependency(%q<font-awesome-sass>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
+      s.add_dependency(%q<devise>, ["= 3.0.0.rc"])
+      s.add_dependency(%q<font-awesome-sass>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
@@ -65,6 +72,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
+    s.add_dependency(%q<devise>, ["= 3.0.0.rc"])
+    s.add_dependency(%q<font-awesome-sass>, [">= 0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
