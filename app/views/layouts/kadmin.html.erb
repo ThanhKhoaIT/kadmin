@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>Karl Admin panel</title>
-	<link href="/assets/kadmin/favicon.png" rel="shortcut icon">
+	<link href="/assets/kadmin/favicon.ico" rel="shortcut icon">
   <%= stylesheet_link_tag    "kadmin/application", :media => "all" %>  
   <%= javascript_include_tag "kadmin/application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
+	<div id="menubar">
+		<a href="#" id="start" class="glyphicon glyphicon-th-large"></a>
+		<div>
+		</div>
+	</div>
+  <%= yield %>
 </body>
 </html>

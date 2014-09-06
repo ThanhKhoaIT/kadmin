@@ -9,3 +9,8 @@ group :development do
   gem "jeweler", "~> 2.0.1"
   gem "simplecov", ">= 0"
 end
+
+gem 'devise', '3.0.0.rc'
+
+# Style
+gem 'font-awesome-sass'

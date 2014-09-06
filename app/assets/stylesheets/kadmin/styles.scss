@@ -1,0 +1,35 @@
+$color1: #34485D;
+
+//@include border-radius(10px);
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//@extend transition_height
+.transition_height{
+  -webkit-transition: height 0.5s;
+     -moz-transition: height 0.5s;
+      -ms-transition: height 0.5s;
+          transition: height 0.5s;
+}
+
+
+
+#menubar {
+	background: $color1;
+	width:100%;
+	height:40px;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	
+	#start {
+		display:block;
+		width:48px;
+		height:48px;
+		
+	}
+}
