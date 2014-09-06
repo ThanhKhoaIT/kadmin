@@ -33,6 +33,11 @@ Gem::Specification.new do |s|
     "app/assets/stylesheets/kadmin/application.css",
     "app/assets/stylesheets/kadmin/bootstrap-responsive.css",
     "app/assets/stylesheets/kadmin/bootstrap.css",
+    "app/assets/stylesheets/kadmin/font-awesome.min.css",
+    "app/assets/stylesheets/kadmin/fonts/fontawesome-webfont.eot",
+    "app/assets/stylesheets/kadmin/fonts/fontawesome-webfont.svg",
+    "app/assets/stylesheets/kadmin/fonts/fontawesome-webfont.ttf",
+    "app/assets/stylesheets/kadmin/fonts/fontawesome-webfont.woff",
     "app/assets/stylesheets/kadmin/reset.css",
     "app/assets/stylesheets/kadmin/styles.scss",
     "app/controllers/kadmin/dashboard_controller.rb",
@@ -56,7 +61,6 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<devise>, ["= 3.0.0.rc"])
-      s.add_runtime_dependency(%q<font-awesome-sass>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
@@ -64,7 +68,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
       s.add_dependency(%q<devise>, ["= 3.0.0.rc"])
-      s.add_dependency(%q<font-awesome-sass>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
@@ -73,7 +76,6 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<devise>, ["= 3.0.0.rc"])
-    s.add_dependency(%q<font-awesome-sass>, [">= 0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
